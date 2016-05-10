@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dialog"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+"
+
+    <LinearLayout
+        android:id="@+id/pwd_tips"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="30dp"
+        android:orientation="vertical" >
+
+         <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Password requirements:"
+             >
+        </TextView>
+        <TextView
+            android:id="@+id/pwd_tip_1"
+           
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="-At Least 8 Characters"
+            >
+        </TextView>
+
+        <TextView
+            android:id="@+id/pwd_tip_2"
+            
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="-One Upper Case Letter"
+            >
+        </TextView>
+
+        <TextView
+            android:id="@+id/pwd_tip_3"
+            
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="-One Lower Case Letter"
+             >
+        </TextView>
+
+        <TextView
+            android:id="@+id/pwd_tip_4"
+            
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="-One Number"
+            >
+        </TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical" >
+"
+
+        <TextView
+            android:id="@+id/name_one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="One" />
+
+        <EditText
+            android:id="@+id/edit_one"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minWidth="200dip" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/dialogpwd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/name_two"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Two" />
+
+        <EditText
+            android:id="@+id/edit_two"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
+            android:maxLength="32"
+            android:minWidth="200dip"
+            android:singleLine="true" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lin_three"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/name_three"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Three" />
+
+        <EditText
+            android:id="@+id/edit_three"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
+            android:maxLength="32"
+            android:minWidth="200dip"
+            android:singleLine="true" />
+    </LinearLayout>
+
+</LinearLayout>

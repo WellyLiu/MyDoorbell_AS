@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#b9e1ee"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginBottom="17.5dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginTop="35dp" >
+
+        <TextView
+            android:layout_width="35dp"
+            android:layout_height="match_parent"
+            android:background="#00a4b5" />
+
+        <EditText
+            android:id="@+id/user_name_input"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="-2dip"
+            android:layout_marginStart="-2dip"
+            android:layout_weight="1"
+            android:background="@drawable/edittext_bg"
+            android:ems="10"
+            android:hint="@string/nortek_name_hit"
+            android:inputType="text"
+            android:paddingLeft="10dp"
+            android:textSize="12sp" >
+
+            <requestFocus />
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp" >
+
+        <TextView
+            android:layout_width="35dp"
+            android:layout_height="match_parent"
+            android:background="#00a4b5" />
+
+        <EditText
+            android:id="@+id/user_email_input"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="-2dip"
+            android:layout_marginStart="-2dip"
+            android:layout_weight="1"
+            android:background="@drawable/edittext_bg"
+            android:ems="10"
+            android:maxLength="128"
+            android:hint="@string/nortek_account_hit"
+            android:inputType="textEmailAddress"
+            android:paddingLeft="10dp"
+            android:textSize="12sp" >
+
+            <requestFocus />
+        </EditText>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/register_tip"
+        android:layout_width="match_parent"
+        android:layout_height="52.5dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:gravity="center_vertical"
+        android:textColor="@color/red" />
+     
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginBottom="17.5dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp" >
+
+        <TextView
+            android:layout_width="35dp"
+            android:layout_height="match_parent"
+            android:background="#00a4b5" />
+
+        <EditText
+            android:id="@+id/user_pwd_input"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="-2dip"
+            android:layout_marginStart="-2dip"
+            android:layout_weight="1"
+            android:background="@drawable/edittext_bg"
+            android:ems="10"
+            android:maxLength="64"
+            android:hint="@string/pwd_hit"
+            android:inputType="textPassword"
+            android:paddingLeft="10dp"
+            android:textSize="12sp" >
+
+            <requestFocus />
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginBottom="17.5dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp" >
+
+        <TextView
+            android:layout_width="35dp"
+            android:layout_height="match_parent"
+            android:background="#00a4b5" />
+
+        <EditText
+            android:id="@+id/user_confirm_pwd_input"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="-2dip"
+            android:layout_marginStart="-2dip"
+            android:layout_weight="1"
+            android:background="@drawable/edittext_bg"
+            android:ems="10"
+            android:maxLength="64"
+            android:hint="@string/pwd_confirm_hit"
+            android:inputType="textPassword"
+            android:paddingLeft="10dp"
+            android:textSize="12sp" >
+
+            <requestFocus />
+        </EditText>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/create_account"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:background="@drawable/button_shape_style_pnp_1"
+        android:text="@string/create_account"
+        android:textColor="@color/white" />
+
+</LinearLayout>

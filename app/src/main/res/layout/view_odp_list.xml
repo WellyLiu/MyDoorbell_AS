@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="180dp"
+    android:layout_marginBottom="15dp"
+    android:layout_marginLeft="40dp"
+    android:layout_marginRight="40dp"
+    android:layout_marginTop="50dp"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+   <LinearLayout 
+       android:id="@+id/door_lin"
+       android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        >
+    <FrameLayout
+        android:id="@+id/door_frame"
+        android:layout_width="180dp"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="30dp" >
+
+        <ImageView
+            android:id="@+id/door_img"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/door_phone_active" />
+
+        <TextView
+            android:id="@+id/door_log_num"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:background="@drawable/textview_shape_corner"
+            android:text="@string/nortek_miss_call"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textColor="@android:color/white" />
+    </FrameLayout>
+</LinearLayout>
+
+    <TextView
+        android:id="@+id/door_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/door_lin"
+        android:layout_marginBottom="30dp"
+        android:gravity="center"
+        android:text="Front Door"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#ff00a4b5" />
+
+</RelativeLayout>

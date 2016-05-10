@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#b9e1ee" 
+    android:orientation="vertical">"
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8"
+        android:orientation="vertical" >
+
+        <com.gocontrol.doorbell.ui.ObservableWebView
+            android:id="@+id/eula_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="25dp"           
+            android:scrollbars="vertical"  
+            android:background="@color/white"        
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_marginBottom="30dp"
+            android:layout_marginTop="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+        	android:layout_weight="1"    
+            android:gravity="center" >
+
+            <Button
+                android:id="@+id/decline"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="#00000000"
+                android:text="@string/nortek_decline"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/accept"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                android:enabled="false"
+                android:background="@drawable/button_shape_style_pnp_2"
+                android:text="@string/nortek_accept"
+                android:textColor="@color/white" />
+        </LinearLayout>
+        
+</LinearLayout>

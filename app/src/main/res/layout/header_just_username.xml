@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:background="#00a4b5"
+    android:orientation="vertical"
+    android:padding="16dp" >
+
+    <TextView 
+        android:id="@+id/id_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:text="google@google.com"
+        android:layout_marginLeft="15dp"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:textSize="18sp"
+        android:textColor="@color/white" />
+    
+    <TextView 
+        android:id="@+id/id_showname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/id_username"
+        android:layout_alignParentRight="true"
+        android:text="User"
+        android:layout_marginLeft="15dp"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:textSize="22sp"
+        android:textColor="@color/white" />
+
+</RelativeLayout>

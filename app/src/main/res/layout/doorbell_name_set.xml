@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#b9e1ee"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginTop="35dp"
+        android:gravity="start"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:text="@string/nortek_account_name_tip"
+        android:textColor="#00a4b5"
+        android:textSize="16sp" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/btn_bg_color"
+        android:scaleType="fitXY" />
+
+    <TextView
+        android:id="@+id/front_door"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginLeft="15dp"
+        android:gravity="start|center_vertical"
+        android:text="@string/nortek_account_name_front"
+        android:textColor="#231815" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/btn_bg_color"
+        android:scaleType="fitXY" />
+
+    <TextView
+        android:id="@+id/back_door"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginLeft="15dp"
+        android:gravity="start|center_vertical"
+        android:text="@string/nortek_account_name_back"
+        android:textColor="#231815" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/btn_bg_color"
+        android:scaleType="fitXY" />
+
+    <TextView
+        android:id="@+id/office_door"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginLeft="15dp"
+        android:gravity="start|center_vertical"
+        android:text="@string/nortek_account_name_office"
+        android:textColor="#231815" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/btn_bg_color"
+        android:scaleType="fitXY" />
+
+    <TextView
+        android:id="@+id/custom_name"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginLeft="15dp"
+        android:gravity="start|center_vertical"
+        android:text="@string/nortek_account_name_custom_name"
+        android:textColor="#231815" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/btn_bg_color"
+        android:scaleType="fitXY" />
+
+</LinearLayout>

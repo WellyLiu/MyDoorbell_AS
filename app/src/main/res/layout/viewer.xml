@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+     >
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+	<SurfaceView
+	     android:id="@+id/surface"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+	    />
+    </FrameLayout>
+<LinearLayout
+     android:orientation="vertical"
+      android:layout_below="@id/container"
+       android:background="@drawable/all_bg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+    <LinearLayout
+        android:id="@+id/viewer_ringing"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="4"
+        android:orientation="horizontal"
+         >
+			<View android:id="@+id/view_left"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:layout_weight="1"/>
+            <Button
+                android:id="@+id/ringing_cancel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:onClick="onButtonByCancel"
+                android:background="@drawable/odp_deny_btn"
+                android:textColor="@android:color/white"
+                android:text="@string/deny" />
+			<View android:id="@+id/view_right"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:layout_weight="1"/>
+            <Button
+                android:id="@+id/ringing_answer"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                 android:layout_marginLeft="15dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/odp_accept_btn"
+                android:onClick="onButtonByAnswer"
+                android:textColor="@android:color/white"
+                android:text="@string/accept" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" 
+        android:layout_weight="1"
+        >
+
+        <LinearLayout
+            android:id="@+id/viewer_function"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:orientation="vertical" >
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:stretchColumns="0" >
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/video_recording" />
+                    <ToggleButton
+                        android:id="@+id/button_video_recording"
+                        android:layout_width="@dimen/media_btn_size"
+                        android:layout_height="@dimen/media_btn_size"
+                        android:layout_column="2"
+                        android:onClick="onButtonByRecording"
+                        android:background="@drawable/tgbtn_video_record_style"
+                        android:textOff=""
+                        android:textOn="" />
+                </TableRow>
+				<View
+				    android:layout_height="1dp"
+				    android:background="@drawable/text_blueline"
+				    />
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/snapshot" />
+                    <ToggleButton
+                        android:id="@+id/button_snapshot"
+                      android:layout_width="@dimen/media_btn_size"
+                        android:layout_height="@dimen/media_btn_size"
+                        android:layout_column="2"
+                        android:onClick="onButtonBySnapshot"
+                         android:background="@drawable/tgbtn_snapshot_style"
+                        android:textOff=""
+                        android:textOn="" />
+                </TableRow>
+				<View
+				    android:layout_height="1dp"
+				    android:background="@drawable/text_blueline"
+				    />
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/audio_play_mute" />
+                    <ToggleButton
+                        android:id="@+id/button_mute"
+                       android:layout_width="@dimen/media_btn_size"
+                        android:layout_height="@dimen/media_btn_size"
+                        android:layout_column="2"
+                        android:onClick="onButtonByAudioMute"
+                         android:background="@drawable/tgbtn_audio_play_mute_style"
+                        android:textOff=""
+                        android:textOn="" />
+                </TableRow>
+					<View
+				    android:layout_height="1dp"
+				    android:background="@drawable/text_blueline"
+				    />
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/audio_send" />
+                    <ToggleButton
+                        android:id="@+id/button_audio_send"
+                      android:layout_width="@dimen/media_btn_size"
+                        android:layout_height="@dimen/media_btn_size"
+                        android:layout_column="2"
+                        android:onClick="onButtonByAudioSend"
+                         android:background="@drawable/tgbtn_audio_send_style"
+                        android:textOff=""
+                        android:textOn="" />
+                </TableRow>
+				<View
+				    android:layout_height="1dp"
+				    android:background="@drawable/text_blueline"
+				    />
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/unlock_door" />
+                    <ToggleButton
+                        android:id="@+id/button_unlock_door"
+                        android:layout_width="@dimen/media_btn_size"
+                        android:layout_height="@dimen/media_btn_size"
+                        android:layout_column="2"
+                        android:onClick="onButtonByUnlockDoor"
+                         android:background="@drawable/tgbtn_unlock_door_style"
+                        android:textOff=""
+                        android:textOn="" />
+                </TableRow>
+       				<View
+				    android:layout_height="1dp"
+				    android:background="@drawable/text_blueline"
+				    />
+            </TableLayout>
+        </LinearLayout>
+
+    </ScrollView>
+  </LinearLayout>
+</RelativeLayout>

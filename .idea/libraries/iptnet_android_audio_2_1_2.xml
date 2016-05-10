@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="iptnet-android-audio-2.1.2">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/app/libs/iptnet-android-audio-2.1.2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

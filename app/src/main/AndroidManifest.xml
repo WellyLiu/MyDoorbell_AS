@@ -1,0 +1,459 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.gocontrol.doorbell"
+    android:versionCode="1200006"
+    android:versionName="@string/app_version">
+
+    <uses-sdk
+        android:minSdkVersion="17"
+        android:targetSdkVersion="20" />
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <permission
+        android:name="com.gocontrol.doorbell.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.gocontrol.doorbell.permission.C2D_MESSAGE" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+
+    <application
+        android:name="com.gocontrol.doorbell.AppApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/my_actionbar_theme">
+
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+
+        <service android:name="com.gocontrol.doorbell.DoorService" />
+
+        <activity
+            android:name="com.gocontrol.doorbell.ui.v7.EulaActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.gocontrol.doorbell.ui.v7.SplashActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <activity
+            android:name="com.gocontrol.doorbell.ui.v7.UserLoginUI"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <activity
+            android:name="com.gocontrol.doorbell.ui.v7.DoorPhoneList"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTask"
+            >
+
+        </activity>
+
+        <activity
+            android:name="com.gocontrol.doorbell.ui.v7.UserForgetPwdUI"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".UserLoginUI" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".UserLoginUI" />
+        </activity>
+        <activity
+            android:name="com.gocontrol.doorbell.ui.v7.UserForgetPwdVerifyUI"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".UserLoginUI" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".UserLoginUI" />
+        </activity>
+
+        <activity
+            android:name="com.gocontrol.doorbell.ui.v7.UserRegisterVerifyUI"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".UserLoginUI" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".UserLoginUI" />
+        </activity>
+
+        <activity
+            android:name="com.gocontrol.doorbell.ui.v7.UserRegisterUI"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".UserLoginUI" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".UserLoginUI" />
+        </activity>
+
+        <activity
+            android:name="com.gocontrol.doorbell.ui.v7.DoorPhoneAddByOther"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".DoorPhoneList" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".DoorPhoneList" />
+        </activity>
+
+        <activity
+            android:name="com.gocontrol.doorbell.ui.v7.DoorPhoneAddNetworkType"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".DoorPhoneList" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".DoorPhoneList" />
+        </activity>
+
+        <activity
+            android:name="com.gocontrol.doorbell.ui.v7.DoorPhoneAddPassword"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".DoorPhoneList" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".DoorPhoneList" />
+        </activity>
+
+        <activity
+            android:name="com.gocontrol.doorbell.ui.v7.DoorPhoneAddType"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".DoorPhoneList" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".DoorPhoneList" />
+        </activity>
+        <activity
+            android:name="com.gocontrol.doorbell.ui.v7.DoorPhonePasswordInput"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".DoorPhoneList" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".DoorPhoneList" />
+        </activity>
+        <activity
+            android:name="com.gocontrol.doorbell.ui.v7.DoorPhoneAPPasswordInput"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".DoorPhoneList" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".DoorPhoneList" />
+        </activity>
+
+        <activity
+            android:name="com.gocontrol.doorbell.ui.v7.DoorName"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".DoorPhoneList" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".DoorPhoneList" />
+        </activity>
+
+        <activity
+            android:name="com.gocontrol.doorbell.ui.v7.WiFiChoose"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".DoorPhoneList" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".DoorPhoneList" />
+        </activity>
+
+        <activity
+            android:name="com.gocontrol.doorbell.ui.v7.WiFiSendSSID"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".DoorPhoneList" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".DoorPhoneList" />
+        </activity>
+        <activity
+            android:name="com.gocontrol.doorbell.ui.v7.UserSystemSettings"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".DoorPhoneList" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".DoorPhoneList" />
+        </activity>
+
+        <activity
+            android:name="com.gocontrol.doorbell.ui.v7.UserSystemSettingsDoor"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".DoorPhoneList" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".UserSystemSettingsDoor" />
+        </activity>
+
+        <activity
+            android:name="com.gocontrol.doorbell.ui.v7.UserSystemSettingDoorColorMode"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".DoorPhoneList" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".DoorPhoneList" />
+        </activity>
+
+        <activity
+            android:name="com.gocontrol.doorbell.ui.v7.UserSystemSettingDoorMotionDetect"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".DoorPhoneList" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".DoorPhoneList" />
+        </activity>
+
+        <activity
+            android:name="com.gocontrol.doorbell.ui.v7.UserAccountManager"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".DoorPhoneList" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".DoorPhoneList" />
+        </activity>
+
+        <activity
+            android:name="com.gocontrol.doorbell.ui.v7.UserSystemStatus"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".DoorPhoneList" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".DoorPhoneList" />
+        </activity>
+
+        <activity
+            android:name="com.gocontrol.doorbell.ui.v7.UserAboutDevice"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".DoorPhoneList" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".DoorPhoneList" />
+        </activity>
+
+        <activity
+            android:name="com.gocontrol.doorbell.ui.v7.UserAboutDeviceDoor"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".DoorPhoneList" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".DoorPhoneList" />
+        </activity>
+
+        <activity
+            android:name="com.gocontrol.doorbell.ui.v7.AllAccountShow"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".DoorPhoneList" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".DoorPhoneList" />
+        </activity>
+
+        <activity
+            android:name="com.gocontrol.doorbell.ui.v7.DoorPhonePassword"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".UserSystemSettings" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".UserSystemSettings" />
+        </activity>
+
+        <activity
+            android:name="com.gocontrol.doorbell.ui.v7.DoorPhoneRingTone"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".UserSystemSettings" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".UserSystemSettings" />
+        </activity>
+
+        <!-- NTUT -->
+        <activity
+            android:name="com.gocontrol.doorbell.ui.v7.CallFunctionActivity"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".HomeActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".HomeActivity" />
+        </activity>
+        <activity
+            android:name="com.gocontrol.doorbell.ui.v7.MediaActivity"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".ui.v7.CallFunctionActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ui.v7.CallFunctionActivity" />
+        </activity>
+        <activity
+            android:name="com.gocontrol.doorbell.ui.v7.CallLogActivity"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".ui.v7.CallFunctionActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ui.v7.CallFunctionActivity" />
+        </activity>
+
+        <activity
+            android:name="com.gocontrol.doorbell.ui.v7.CallMotionPIRLogActivity"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".ui.v7.CallFunctionActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ui.v7.CallFunctionActivity" />
+        </activity>
+
+        <activity
+            android:name="com.gocontrol.doorbell.DoorEditActivity"
+            android:parentActivityName="com.gocontrol.doorbell.HomeActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".HomeActivity" />
+        </activity>
+        <activity
+            android:name="com.gocontrol.doorbell.WebLoginEditActivity"
+            android:label="Web Login"
+            android:parentActivityName="com.gocontrol.doorbell.HomeActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".HomeActivity" />
+        </activity>
+        <activity
+            android:name="com.gocontrol.doorbell.C2CLoginEditActivity"
+            android:label="C2C Login"
+            android:parentActivityName="com.gocontrol.doorbell.HomeActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".HomeActivity" />
+        </activity>
+        <activity
+            android:name="com.gocontrol.doorbell.ViewerActivity"
+            android:parentActivityName="com.gocontrol.doorbell.HomeActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".HomeActivity" />
+        </activity>
+        <activity
+            android:name="com.gocontrol.doorbell.MediaActivity"
+            android:parentActivityName="com.gocontrol.doorbell.HomeActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".HomeActivity" />
+        </activity>
+        <activity
+            android:name="com.gocontrol.doorbell.QuietTimeHoursActivity"
+            android:parentActivityName=".ui.v7.UserSystemSettings"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".HomeActivity" />
+        </activity>
+        <activity
+            android:name="com.gocontrol.doorbell.WebRegisterActivity"
+            android:label="Register"
+            android:parentActivityName="com.gocontrol.doorbell.HomeActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".HomeActivity" />
+        </activity>
+        <activity
+            android:name="com.gocontrol.doorbell.WebVerifyActivity"
+            android:label="Verify"
+            android:parentActivityName="com.gocontrol.doorbell.HomeActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".HomeActivity" />
+        </activity>
+        <activity
+            android:name="com.gocontrol.doorbell.WebForgotActivity"
+            android:label="Forgot"
+            android:parentActivityName="com.gocontrol.doorbell.HomeActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".HomeActivity" />
+        </activity>
+        <activity
+            android:name="com.gocontrol.doorbell.WebModifyProfileActivity"
+            android:label="Modify Profile"
+            android:parentActivityName="com.gocontrol.doorbell.HomeActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".HomeActivity" />
+        </activity>
+        <activity
+            android:name="com.gocontrol.doorbell.WebModifyPasswordActivity"
+            android:label="Modify Password"
+            android:parentActivityName="com.gocontrol.doorbell.HomeActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".HomeActivity" />
+        </activity>
+        <activity
+            android:name="com.gocontrol.doorbell.ScanActivity"
+            android:label="QR Scanner"
+            android:parentActivityName="com.gocontrol.doorbell.HomeActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".HomeActivity" />
+        </activity>
+        <receiver
+            android:name="com.google.android.gms.gcm.GcmReceiver"
+            android:exported="true"
+            android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <category android:name="com.gocontrol.doorbell" />
+            </intent-filter>
+        </receiver>
+        <service
+            android:name="com.gocontrol.doorbell.GcmListenerService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+            </intent-filter>
+        </service>
+        <service
+            android:name="com.gocontrol.doorbell.UpdateGcmTokenService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.android.gms.iid.InstanceID"/>
+            </intent-filter>
+        </service>
+        <service
+            android:name="com.gocontrol.doorbell.GetGcmTokenService"
+            android:exported="false"/>
+        <service
+            android:name="com.gocontrol.doorbell.service.AppUtilsService"
+            android:exported="false"/>
+        <service
+            android:name="com.gocontrol.doorbell.ConnectDoorService"
+            android:exported="false"/>
+    </application>
+
+</manifest>

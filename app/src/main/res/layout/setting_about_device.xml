@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#b9e1ee"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:background="#00a4b5"
+        android:gravity="center_vertical"
+        android:paddingLeft="12dp"
+        android:text="@string/software_version_1"
+        android:textColor="@color/aliceblue" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:gravity="start|center_vertical"
+            android:text="@string/software_version"
+            android:textColor="#231815" />
+
+        <TextView
+            android:id="@+id/smp_version"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:gravity="start|center_vertical"
+            android:textColor="#231815" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/owner_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:layout_marginLeft="10dp"
+        android:gravity="start|center_vertical"
+        android:text="@string/nortek_owner_info"
+        android:textColor="#00a4b5" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:background="#00a4b5"
+        android:gravity="center_vertical"
+        android:paddingLeft="12dp"
+        android:text="@string/hardware_info"
+        android:textColor="@color/aliceblue" />
+
+    <TextView
+        android:id="@+id/function_1_show"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:gravity="start|center_vertical"
+        android:text="abc"
+        android:paddingLeft="12dp"
+        android:textColor="#231815" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/btn_bg_color"
+        android:scaleType="fitXY" />
+
+    <TextView
+        android:id="@+id/function_2_show"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:paddingLeft="12dp"        
+        android:gravity="start|center_vertical"
+        android:text="abc"
+        android:textColor="#231815" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/btn_bg_color"
+        android:scaleType="fitXY" />
+
+    <TextView
+        android:id="@+id/function_3_show"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:paddingLeft="12dp"        
+        android:gravity="start|center_vertical"
+        android:text="abc"
+        android:textColor="#231815" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/btn_bg_color"
+        android:scaleType="fitXY" />
+
+    <TextView
+        android:id="@+id/function_4_show"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:paddingLeft="12dp"        
+        android:gravity="start|center_vertical"
+        android:text="abc"
+        android:textColor="#231815" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:background="#00a4b5"
+        android:gravity="center_vertical"
+        android:paddingLeft="12dp"
+        android:text="@string/doorphone_version_1"
+        android:textColor="@color/aliceblue" />
+
+    <ListView
+        android:id="@+id/odp_list"
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="1"
+        android:divider="@color/btn_bg_color"
+        android:dividerHeight="1dp" />
+
+</LinearLayout>

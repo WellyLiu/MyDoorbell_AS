@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app_name">MyDoorbell</string>
+	<string name="app_version">V0.0.13_r9435</string>
+	
+	<!-- NTUT Server
+	<string name="def_reg_srv">wb03.iptnet.net</string>
+	<string name="def_reg_domain">bronci.iptnet.net</string>
+	<string name="gcm_sender_id">184002499408</string>
+	 -->
+	 <!-- TECOM Server -->
+	<string name="def_reg_srv">doorphone-nortek.tecom.com.tw</string>
+	<string name="def_reg_domain">doorphone-nortek.tecom.com.tw</string>
+	<string name="gcm_sender_id">1025391809542</string>
+	<string name="web_eac_url">https://cloudsvreacctl-nortek.tecom.com.tw/</string>
+	<string name="web_eac_api_key">API32ddb9b19ae7bdab4a5451ac02f0</string>
+	
+	<!-- tecom -->
+	<string name="splash_text">Smart Doorbell Camera</string>
+    <string name="main_door_title">Current Doorbell Camera</string>
+    <string name="main_call_log_titile">Vistor Log</string>
+    <string name="call_type_accepted">ACCEPTED CALL</string>
+    <string name="call_type_missed">MISSED CALL</string>
+    <string name="your_account">Your Account</string>
+    <string name="your_pwd">Your Password</string>
+    <string name="your_door_id">Device ID</string>
+    <string name="your_door_account">Device Management Account</string>
+    <string name="your_door_password">Device Management Password</string>
+
+    <!-- Begin:added by vincent 20151026 for media info -->
+    <string name="dlg_select_media">Select Media</string>
+    <string name="dlg_select_pictures">Snapshots</string>
+    <string name="dlg_select_clips">Video Clips</string>
+    <string name="select_monitor">Live View</string>
+    <string name="select_log">Call Logs</string>
+    <string name="detect_log">Motion Detection Logs</string>
+    <string name="PIR_log">PIR Detection Logs</string>
+    <string name="dlg_select_cancel">Cancel</string>
+    <string name="mydevices">My Devices</string>
+    <string name="tecom_door">Doorbell Camera</string>
+    <string name="deny">Reject</string>
+    <string name="end">End</string>
+    <string name="accept">Answer</string>
+    <string name="video_recording">Video</string>
+    <string name="snapshot">Snapshot</string>
+    <string name="audio_play_mute">Speaker</string>
+    <string name="audio_play_handset">Handset</string>
+    <string name="audio_send">Mute</string>
+    <string name="unlock_door">Unlock Door</string>
+    <string name="sure_to_quit">Are you sure?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="dlg_select_edit_account">Edit Account</string>
+    <string name="dlg_select_manual">Manual Input</string>
+    <string name="dlg_select_scan">Scan QR Code</string>
+    <string name="connecting">Connecting</string>
+    <string name="failed_reason_calling">Calling</string>
+    <string name="failed_reason_calling_fail">Connect Fail</string>
+    <string name="failed_reason_network">Network exception</string>
+    <string name="failed_reason_timeout">Timeout</string>
+    <string name="failed_reason_unauthorized">Unauthorized</string>
+    <string name="failed_reason_server_no_response">Server no response</string>
+    <string name="failed_reason_peer_offline">Peer offline</string>
+    <string name="failed_reason_peer_not_response">Peer not response</string>
+    <string name="failed_reason_peer_busy">Peer is busy</string>
+    <string name="terminating">Terminating</string>
+    <string name="terminated">Terminated</string>
+    <string name="failed">Failed</string>
+    <string name="save_to">Save to</string>
+    <string name="save_failed">Save failed</string>
+    <string name="scan_success">Scan completed</string>
+    <string name="scan_failed">Incorrect format</string>
+    <!-- End -->
+
+
+     <!-- User login -->
+    <string name="account_hit">Email Address</string>
+    <string name="pwd_hit">Password</string>
+    <string name="user_login_ok">Log In</string>
+    <string name="create_account">Create Account</string>
+    <string name="active_account">Activate</string>
+    <string name="reset_code">Resend Authentication Code</string>
+    <string name="forget_pwd">Forgot Password</string>
+    <string name="pwd_confirm_hit">Confirm Password</string>
+    <string name="name_hit">Name</string>
+    <string name="send_email">Send</string>   
+    <string name="verify_code">Authentication Code</string>    
+    <string name="get_verify_code">Check your email to receive Authentication Code.</string>
+    <string name="input_new_password">Please enter a new password.</string> 
+    <string name="forget_pwd_tip">Input your email address.  Click Send.  An authentication code will be sent to your email.</string>
+    <string name="add_odp_tip">Note:\nIf you are home now, please connect to your home router. If you get the configured door phone password, you can accelarate the configuration.</string>
+	<string name="connect_to_odp">To connect to the Smart Doorbell Camera, click on the \'Choose Wi-Fi\' link to open your Wi-Fi settings page and search for \'Doorbell Camera_XXX\'.\nOnce the connection has been established, return to the MyDoorbell app.</string>
+	<string name="connect_to_odp_1">To connect to the Smart Doorbell Camera, click on the \'Choose Wi-Fi\' link to open your Wi-Fi settings page and search for \'Doorbell Camera_XXX\'.</string>
+	<string name="connect_to_odp_2">Once the connection has been established, return to the MyDoorbell app.</string>
+	<string name="authentication_tip">Check your email to receive Authentication Code.</string>
+	<string name="tecom_odp_connected">Connected</string>
+	<string name="tecom_odp_disconnected">Disconnected</string>
+	<string name="tecom_odp">Doorbell Camera_XXX</string>
+	<string name="tecom_process_title">Logging in...</string>
+	<string name="tecom_process_pnp_title">Pairing...</string>
+	<string name="tecom_precess_content">This might take a minute or two</string>
+	<string name="tecom_send_ssid_tip">Choose your home Wi-Fi\n and insert password. </string>
+
+	<!-- PNP -->
+	<string name="pnp_tip_1">What are you doing now ?</string>
+	<string name="pnp_tip_2">Add to your configured doorbell</string>
+	<string name="pnp_tip_3">Add your new doorbell</string>
+	<string name="pnp_tip_4">How do you surf the internet now ?</string>
+	<string name="pnp_tip_5">Via the home router</string>
+	<string name="pnp_tip_6">Via 3G/4G or other wifi signal</string>
+	<string name="pnp_tip_7">Do you have the doorbell password ?</string>
+	<string name="pnp_tip_8">Yes</string>
+	<string name="pnp_tip_9">No</string>
+	<string name="pnp_tip_10">Please inform someone who gets the door phone password. You should open the APP when he/she adds your account.</string>
+	<string name="pnp_tip_11">Doorbell Camera Password</string>
+	<string name="pnp_tip_12">Please enter your doorbell password</string>
+	<string name="pnp_tip_13">Doorbell Camera Old Password</string>
+	<string name="pnp_tip_14">Doorbell Camera New Password</string>
+	<string name="pnp_tip_15">New Password</string>
+	<string name="pnp_tip_16">Re-enter Password</string>
+	<string name="pnp_tip_17">Next</string>
+	<string name="pnp_tip_18">Confirm Password</string>
+	<string name="pnp_tip_19">MyDoorbell Password</string>
+	
+<!-- END -->
+	<string name="time">Time</string>
+	<string name="duration">Duration</string>
+	<string name="del_all">Delete All</string>
+	<string name="status">Status</string>
+	<string name="log">Log</string>
+	
+	<string name="door_remove">Remove: </string>
+	<string name="door_remove_tips">Doorbell Camera Password</string>
+	<string name="door_rename">Change Account Name</string>
+	<string name="door_name">New Name</string>
+	<string name="door_pwd">Change Account Password</string>
+	<string name="door_cur_pwd">Current Password</string>
+	<string name="door_new_pwd">New Password</string>
+	<string name="door_confirm_pwd">Re-enter Password</string>
+	
+	<string name="reg_c2c_result_suc">Registration Successful!</string>
+	<string name="reg_c2c_result_fail">Wrong username/password. Please Try Again.</string>
+	<string name="reg_c2c_result_fail_no_resp">Registration timeout! \nPlease check the Internet access if the account you entered is correct.</string>
+	<string name="reg_c2c_result_fail_un_authorized">Registration failed!\nPlease check the password.</string>
+	<string name="account_remove">Remove Account</string>
+	<string name="door_phone_pwd">Doorbell Camera Password</string>
+	
+	<string name="send_wifi_ssid_fail">Setup Failed.</string>
+	<string name="send_wifi_ssid_success">Setup Successful.</string>
+	
+	<string name="pnp_successful">Setup Successful.</string>
+	<string name="pnp_failed">Setup Failed.</string>
+	
+	<string name="default_ring">Default</string>
+	<string name="delete">Delete</string>
+	<string name="sure_to_del_quiet_time">Are you sure you want to delete?</string>
+	
+	<string name="system_setting_title">System Settings</string>
+	<string name="account_manager_title">Account Management</string>
+	<string name="about_device_title">About Devices</string>
+	<string name="system_status_title">System Status</string>
+	
+	<string name="ring_tone">Ringtone</string>
+	<string name="quiet_hour">Do Not Disturb</string>
+	<string name="time_zone">Time Zone</string>
+	<string name="smp_dnd">DND</string>
+	<string name="door_phone">DoorBells</string>
+	<string name="front_door">Front Door</string>
+	<string name="back_door">Back Door</string>
+	<string name="speaker_volume">Speaker volume</string>
+	<string name="mic_volume">Microphone volume</string>
+	<string name="password">Change Password</string>
+	<string name="rename">Rename Doorbell</string>
+	<string name="remove">Remove Doorbell</string>
+	
+	<string name="item">Item</string>
+	<string name="ethernet_status">Ethernet status</string>
+	<string name="server_status">Server status</string>
+	<string name="login_status">Login status</string>
+	<string name="doorphone_status">Doorbell Camera Status</string>
+	<string name="renew_status">Refresh Status</string>
+	<string name="software_version">Software version:</string>
+	<string name="doorphone_version">Doorbell Version:</string>
+	<string name="software_version_1">Software information</string>
+	<string name="doorphone_version_1">MyDoorbell</string>
+	<string name="doorphone_ip">MyDoorbell IP:</string>
+	<string name="check_firmware_version">Check for Upgrade</string>
+	<string name="name">Name</string>
+	<string name="password2">Password</string>
+	<string name="keep_mei_logged_in">Keep me logged in</string>
+	<string name="all_account_status">All Account Status</string>
+	
+	<string name="delete2">Delete</string>
+	<string name="system_settings">System Settings</string>
+	<string name="account_management">Account Management</string>
+	<string name="system_logout">Logout</string>
+	<string name="about_devices">About Devices</string>
+	
+	<string name="quiet_hours">Do Not Disturb</string>	
+	<string name="add_account_failed">Add New Account Failed</string>
+	<string name="add_account_failed_reason_input_error">Email and Password does not accept blank spaces</string>
+	<string name="tecom_process_add_title">Add Account!</string>
+	
+	<string name="function_1">Resolution</string>
+	<string name="function_2">Frame Rate</string>
+	<string name="function_3">Brightness</string>
+	<string name="function_4">Contrast</string>
+	<string name="function_5">Hue </string>
+	<string name="function_6">Saturation</string>
+	<string name="function_7">Sharpness</string>
+	<string name="function_8">Flip</string>
+	<string name="function_9">Mirror</string>
+	<string name="function_10">Motion Detection</string>
+	<string name="function_11">PIR Detection</string>
+	<string name="function_12">Image Adjustments</string>
+	<string name="function_13">Exposure</string>
+	<string name="function_14">Motion Detection</string>
+	<string name="function_15">PIR</string>
+	
+	<string name="door_function_device">Device Settings</string>
+	<string name="door_function_audio">Audio Settings</string>
+	<string name="door_function_video">Video Settings</string>
+	
+	<string name="color_mode">Image Adjustments</string>
+	
+	<string name="version_check_title">Check for Upgrade!</string>
+	<string name="request_time_out">Check Time Out</string>
+	<string name="request_fail">Check Failed</string>
+	<string name="request_remove_fail">Remove Failed</string>
+	<string name="request_same_result"></string>
+	<string name="check_new_firmware">Check for new firmware</string>
+	<string name="update_version_message">New firmware found.  Download now?</string>
+	<string name="update_version_message_1">Success</string>
+	<string name="update_version_message_2">Same Version</string>
+	<string name="ODP_UPDATE_OK">Doorbell Camera Update Successful!</string>
+	<string name="ODP_UPDATE_FAIL">Doorbell Camera Update Failed!</string>
+	<string name="operation_time_out">Operation time out.</string>
+	<string name="operation_process">Operation</string>	
+	<string name="request_ok">Check Successful.</string>
+	<string name="remove_ok">Remove Successfully </string>
+	<string name="can_not_delete_self">Cannot delete your own account.</string>
+	<string name="add_account_ok">Add account OK!</string>
+	<string name="password_update_ok">Doorbell Camera Update Successful!</string>
+	<string name="password_update_fail">Doorbell Camera Update Failed!</string>
+	
+	<string name="password_mis_match">Passwords do not match!</string>
+	
+	<string name="password_1">Old Password cannot be empty!</string>
+	<string name="password_2">Old Password is incorrect!</string>
+	<string name="password_3">New Password cannot be empty!</string>
+	<string name="password_4">Confirm Password cannot be empty!</string>
+	<string name="password_5">Passwords do not match</string>
+	<string name="password_6">New Password is less than 8 characters</string>
+	
+	<string name="password_error">Password Failed!</string>
+	<string name="password_update_error">Update Password Failed!</string>
+	<string name="odp_error">MyDoorbell error!</string>
+	<string name="odp_smp_full">Account not available!</string>
+	<string name="odp_has_configured">Doorbell Camera has been configured!</string>
+	<string name="odp_password_update_tip">Update Doorbell Camera Password(At least 8 digits)!</string>
+	<string name="odp_password_update_tip_1">Please give </string>
+	<string name="odp_password_update_tip_2">a new password</string>
+	
+	<string name="odp_input_pwd">Input Doorbell Camera.</string>
+	<string name="odp_old_pwd">Current Password</string>
+	<string name="odp_new_pwd">New Password</string>
+	<string name="odp_pwd_update">Update Doorbell Password</string>
+	
+	<string name="speaker_1">Lowest</string>
+	<string name="speaker_2">Low</string>
+	<string name="speaker_3">Normal</string>
+	<string name="speaker_4">Hign</string>
+	<string name="speaker_5">Highest</string>
+	
+	<string name="mic_1">Lowest</string>
+	<string name="mic_2">Low</string>
+	<string name="mic_3">Normal</string>
+	<string name="mic_4">High</string>
+	<string name="mic_5">Highest</string>
+	
+	<string name="sure_to_delete">Are you sure to delete?</string>
+	<string name="sure_to_delete_title">Attention</string>
+	<string name="sure_to_delete_user_info">Current account is different from previous account. All data of previous account will be deleted.Are you sure you want to continue?</string>
+	<string name="sure_to_delete_logout">Are you sure you want to logout?</string>
+	
+	<string name="ntut_tip_1">Saving…</string>
+	<string name="ntut_tip_2">Save Error</string>
+	<string name="ntut_tip_3">Modify Success</string>
+	<string name="ntut_tip_4">Modify Error</string>
+	<string name="ntut_tip_5">Modify Error\n</string>
+	<string name="ntut_tip_6">Cancelled</string>
+	<string name="ntut_tip_7">Verifying ...</string>
+	<string name="ntut_tip_8">Verify Error</string>
+	<string name="ntut_tip_9">Verify Success</string>
+	<string name="ntut_tip_10">Verify Error\n</string>
+	<string name="ntut_tip_11">Requesting ...</string>
+	<string name="ntut_tip_12">Request Error</string>
+	<string name="ntut_tip_13">Request Success</string>
+	<string name="ntut_tip_14">Request Error\n</string>
+	<string name="ntut_tip_15">Registering ...</string>
+	<string name="ntut_tip_16">Create Account Error</string>
+	<string name="ntut_tip_17">Register Success</string>
+	<string name="ntut_tip_18">Register Error\n</string>
+	<string name="ntut_tip_19">Code cannot be blank</string>
+	<string name="ntut_tip_20">Account cannot be blank</string>
+	<string name="ntut_tip_21">Password cannot be blank</string>
+	<string name="ntut_tip_22">Confirm Password cannot be empty</string>
+	<string name="ntut_tip_23">Passwords do not match.</string>
+	
+	<string name="enable">Enable</string>
+	<string name="disable">Disable</string>
+	
+	<string name="pir_0">PIR</string>
+	<string name="pir_1">Close</string>
+	<string name="pir_2">Low</string>
+	<string name="pir_3">Medium</string>
+	<string name="pir_4">High</string>
+	
+	<string name="pir_title">PIR Detection</string>
+	
+	<string name="split_screen_view">Grid View</string>
+	<string name="motion_detect_tip">Motion detection:</string>
+	<string name="pir_tip">PIR:</string>
+	
+	<string name="account_exception">Account Failed!</string>
+	<string name="log_out_suc">Logout Sucessful</string>
+	<string name="log_out_error">Logout Error</string>
+	<string name="open_file_fail_1">File Failed to Open</string>
+	
+	<!-- Nortek -->
+	<string name="splash_title">MyDoorbell</string>
+	<string name="log_in">Log In</string>
+	<string name="to_buy">Where to Buy</string>
+	<string name="nortek_account_hit">abc@def.com</string>
+	<string name="nortek_name_hit">Kevin Jackson</string>
+	<string name="register_tip_1">Sorry, that email is already registered.</string>
+	<string name="register_tip_2">Sorry, parameter format failed.</string>
+	<string name="register_tip_3">Sorry, system abnormalities.</string>
+	<string name="register_tip_4">Sorry, the state is not defined.</string>
+	<string name="register_activate">Activate Account</string>
+	<string name="door_setup">Doorbell Setup</string>
+	<string name="door_setup_pwd">Doorbell Password</string>
+	<string name="nortek_door_pwd_set">Please enter a new password.</string>
+	<string name="nortek_door_pwd_set_1">Please enter the doorbell password.</string>
+	<string name="nortek_door_pwd">Doorbell Password</string>
+	<string name="nortek_door_name">Doorbell Name</string>
+	<string name="nortek_pnp_network">WiFi Network</string>
+	<string name="nortek_pnp_configure">Configuring</string>
+	<string name="nortek_pnp_network_title">Join Network</string>
+	<string name="nortek_pnp_network_name">Network Name</string>
+	<string name="nortek_operation_connecting">Connecting</string>
+	<string name="nortek_operation_process">Please wait a moment</string>
+	<string name="nortek_save_successful">Save successfully</string>
+	<string name="nortek_save_failed">Please check APP permissions to access your Photo Gallery or not enough memory is available</string>
+	<string name="nortek_call_answered">Answered</string>
+	<string name="nortek_call_missed">Missed</string>
+	<string name="nortek_clips_no">No Video Clips Captured</string>
+	<string name="nortek_pic_no">No Snapshots Captured</string>
+	<string name="nortek_account_name">Account Name</string>
+	<string name="nortek_account_name_front">Front Door</string>
+	<string name="nortek_account_name_back">Back Door</string>
+	<string name="nortek_account_name_office">Office Door</string>
+	<string name="nortek_account_name_custom">Custom Door</string>
+	<string name="nortek_account_name_custom_name">Custom Name</string>
+	<string name="nortek_account_name_custom_name_t">Doorbell Name</string>
+	<string name="nortek_account_name_fail">Set name failed.</string>
+	<string name="nortek_account_name_fail_2">Set name failed(time out).</string>
+	<string name="nortek_account_name_tip">Please name your new doorbell.</string>
+	<string name="nortek_account_pwd">Account Password</string>
+	<string name="nortek_terms_service">Terms of Service</string>
+	<string name="nortek_decline">Decline</string>
+	<string name="nortek_accept">Accept</string>
+	<string name="nortek_chime">Door Chimes</string>
+	<string name="nortek_where_to_buy">Where to Buy</string>
+	<string name="nortek_feedback">Feedback</string>
+	<string name="nortek_ringtone_1">Ringtone 1</string>
+	<string name="nortek_ringtone_2">Ringtone 2</string>
+	<string name="nortek_ringtone_3">Ringtone 3</string>
+	<string name="nortek_odp_offline">The doorbell offline.</string>
+	<string name="nortek_choose_wifi">Choose Wi-Fi</string>
+	<string name="nortek_account">Account</string>
+	<string name="nortek_sys_log">Diagnostic Info:</string>
+	<string name="nortek_odp_ssid">Add Wi-Fi SSID:</string>
+	<string name="nortek_update_firmware">Update Firmware</string>
+	<string name="nortek_has_call_odp_update">Has informed the doorbell to update the new firmware.</string>
+	<string name="nortek_name_not_null">The name should not be null.</string>
+	<string name="nortek_record_time">● </string>
+	<string name="nortek_doorbell_setting">MyDoorbell Settings</string>
+	<string name="SEND_UPDATE_COMMAND_OK">The doorbell is upgrading now, please wait a moment.</string>
+	<string name="SEND_UPDATE_COMMAND_BUSY">The doorbell is busy, please retry after a moment.</string>
+	<string name="nortek_connect_home_wifi"> Please connect to your home router.</string>
+	<string name="nortek_connect_home_wifi_title"> Tip</string>
+	<string name="nortek_miss_call">Missed Call:</string>
+	<string name="nortek_owner_info">Copyright 2016 Nortek Security &#38; Control, LLC.\nAll rights reserved.\nGoControl is a trademark of Nortek.</string>
+	<string name="hardware_info">Hardware information</string>
+	<string name="manufacture">Manufactrurer:</string>
+	<string name="smp_model">Model:</string>
+	<string name="android_version">Android Version:</string>
+	<string name="aec">Build-in AEC:</string>
+	<!-- Debug AEC -->
+	<string name="aec_debug_title">Acoustic Echo Cancellation</string>
+	<string name="enable_software_aec_module">Enable software AEC</string>
+	<string name="webrtc_aec_notice_toast">This feature is designed to have a great relationship with your device, it may not completely eliminate the echo, and even decline the sound quality.</string>
+</resources>

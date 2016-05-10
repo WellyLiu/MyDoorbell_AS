@@ -1,0 +1,19 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="42dp"
+    android:layout_weight="1.0"
+    android:background="@drawable/eye_bg_gray"
+    android:clickable="true" >
+
+    <com.gocontrol.doorbell.utils.ImageViewCheck
+        android:padding="10dp"
+        android:id="@+id/image_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:duplicateParentState="true"
+        />
+
+   
+
+</FrameLayout>

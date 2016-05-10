@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#b9e1ee"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:background="#00a4b5"
+                android:gravity="center_vertical"
+                android:paddingLeft="12dp"
+                android:text="@string/door_function_audio"
+                android:textColor="@color/aliceblue" />
+
+            <LinearLayout
+                android:id="@+id/speaker_volume"
+                android:layout_width="match_parent"
+                android:layout_height="48dp" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="15dp"
+                    android:layout_weight="1"
+                    android:gravity="start|center_vertical"
+                    android:text="@string/speaker_volume"
+                    android:textColor="#231815" />
+
+                <TextView
+                    android:id="@+id/speaker_volume_show"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="20dp"
+                    android:layout_weight="1"
+                    android:gravity="end|center_vertical"
+                    android:text="5"
+                    android:textColor="#231815" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/btn_bg_color"
+                android:scaleType="fitXY" />
+
+            <LinearLayout
+                android:id="@+id/mic_volume"
+                android:layout_width="match_parent"
+                android:layout_height="48dp" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="15dp"
+                    android:layout_weight="1"
+                    android:gravity="start|center_vertical"
+                    android:text="@string/mic_volume"
+                    android:textColor="#231815" />
+
+                <TextView
+                    android:id="@+id/mic_volume_show"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="20dp"
+                    android:layout_weight="1"
+                    android:gravity="end|center_vertical"
+                    android:text="5"
+                    android:textColor="#231815" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:background="#00a4b5"
+                android:gravity="center_vertical"
+                android:paddingLeft="12dp"
+                android:text="@string/door_function_video"
+                android:textColor="@color/aliceblue" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/function_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="15dp"
+                        android:layout_weight="1"
+                        android:gravity="start|center_vertical"
+                        android:text="@string/function_10"
+                        android:textColor="#231815" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/btn_bg_color"
+                    android:scaleType="fitXY" />
+
+                <LinearLayout
+                    android:id="@+id/function_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="15dp"
+                        android:layout_weight="1"
+                        android:gravity="start|center_vertical"
+                        android:text="@string/function_11"
+                        android:textColor="#231815" />
+
+                    <TextView
+                        android:id="@+id/function_3_show"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="20dp"
+                        android:layout_weight="1"
+                        android:gravity="end|center_vertical"
+                        android:text=""
+                        android:textColor="#231815" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/btn_bg_color"
+                    android:scaleType="fitXY" />
+
+                <LinearLayout
+                    android:id="@+id/function_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="15dp"
+                        android:layout_weight="1"
+                        android:gravity="start|center_vertical"
+                        android:text="@string/function_1"
+                        android:textColor="#231815" />
+
+                    <TextView
+                        android:id="@+id/function_1_show"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="20dp"
+                        android:layout_weight="1"
+                        android:gravity="end|center_vertical"
+                        android:text=""
+                        android:textColor="#231815" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/btn_bg_color"
+                    android:scaleType="fitXY" />
+
+                <LinearLayout
+                    android:id="@+id/function_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="15dp"
+                        android:layout_weight="1"
+                        android:gravity="start|center_vertical"
+                        android:text="@string/function_2"
+                        android:textColor="#231815" />
+
+                    <TextView
+                        android:id="@+id/function_2_show"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="20dp"
+                        android:layout_weight="1"
+                        android:gravity="end|center_vertical"
+                        android:text=""
+                        android:textColor="#231815" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/btn_bg_color"
+                    android:scaleType="fitXY" />
+
+                <LinearLayout
+                    android:id="@+id/color_mode_show"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="15dp"
+                        android:layout_weight="1"
+                        android:gravity="start|center_vertical"
+                        android:text="@string/function_12"
+                        android:textColor="#231815" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:background="#00a4b5"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="12dp"
+                    android:text="@string/door_function_device"
+                    android:textColor="@color/aliceblue" />
+
+                <LinearLayout
+                    android:id="@+id/door_rename"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="15dp"
+                        android:layout_weight="1"
+                        android:gravity="start|center_vertical"
+                        android:text="@string/rename"
+                        android:textColor="#231815" />
+
+                    <TextView
+                        android:id="@+id/rename_1_show"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="20dp"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+            			android:singleLine="true"
+                        android:gravity="end|center_vertical"
+                        android:textColor="#231815" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/btn_bg_color"
+                    android:scaleType="fitXY" />
+
+                <LinearLayout
+                    android:id="@+id/door_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="15dp"
+                        android:layout_weight="1"
+                        android:gravity="start|center_vertical"
+                        android:text="@string/password"
+                        android:textColor="#231815" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/btn_bg_color"
+                    android:scaleType="fitXY" />
+
+                <LinearLayout
+                    android:id="@+id/door_remove"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="15dp"
+                        android:layout_weight="1"
+                        android:gravity="start|center_vertical"
+                        android:text="@string/remove"
+                        android:textColor="#231815" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/btn_bg_color"
+                    android:scaleType="fitXY" />
+
+                <LinearLayout
+                    android:id="@+id/quiet_hours"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp" >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="15dp"
+                        android:gravity="start|center_vertical"
+                        android:text="@string/quiet_hour"
+                        android:textColor="#231815" />
+                </LinearLayout>
+                
+                 <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/btn_bg_color"
+                    android:scaleType="fitXY" />
+                 
+                 <LinearLayout
+                    android:id="@+id/time_zone"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp" >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="15dp"
+                        android:gravity="start|center_vertical"
+                        android:text="@string/time_zone"
+                        android:textColor="#231815" />
+                </LinearLayout>
+                
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

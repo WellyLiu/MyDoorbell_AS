@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#b9e1ee"
+    android:orientation="vertical" >
+    
+
+    <LinearLayout
+         android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="45dp" >
+
+        <ImageView
+             android:layout_gravity="center"
+            android:id="@+id/add_odp_tips"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/add_new_door_phone" />
+        
+    </LinearLayout>
+    
+     <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:gravity="center_horizontal" >
+
+          <ImageView
+            android:layout_gravity="center"
+            android:id="@+id/imageView1"
+            android:scaleType="fitXY"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:src="@drawable/dialog_add_odp" />
+         
+        <TextView
+           	android:layout_gravity="center"
+            android:id="@+id/textView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:paddingLeft="5dp"
+            android:layout_marginLeft="10dp"
+           	android:layout_marginTop="5dp"
+            android:background="#00a4b5"
+            android:text="@string/add_odp_tip"
+            android:textSize="16sp"
+            android:textColor="#ffffff" />
+       
+    </FrameLayout>
+    
+</LinearLayout>

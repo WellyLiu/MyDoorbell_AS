@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#b9e1ee"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:gravity="start|center_vertical"
+            android:text="@string/doorphone_version"
+            android:textColor="#231815" />
+
+        <TextView
+            android:id="@+id/odp_version"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:gravity="start|center_vertical"
+            android:textColor="#231815" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/btn_bg_color"
+        android:scaleType="fitXY" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:gravity="start|center_vertical"
+            android:text="@string/doorphone_ip"
+            android:textColor="#231815" />
+
+        <TextView
+            android:id="@+id/odp_ip"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:gravity="start|center_vertical"
+            android:textColor="#231815" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/btn_bg_color"
+        android:scaleType="fitXY" />
+
+   
+      <LinearLayout        
+        android:layout_width="match_parent"
+        android:layout_height="50dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+
+            android:gravity="start|center_vertical"
+            android:text="@string/nortek_odp_ssid"
+            android:textColor="#231815" />
+
+        <TextView
+            android:id="@+id/odp_ssid"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:gravity="start|center_vertical"
+            android:textColor="#231815" />
+        
+      
+    </LinearLayout>
+  
+
+     <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/btn_bg_color"
+        android:scaleType="fitXY" />
+     
+       <LinearLayout        
+        android:layout_width="match_parent"
+        android:layout_height="50dp" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="4"
+            android:gravity="start|center_vertical"
+            android:text="@string/nortek_sys_log"
+            android:textColor="#231815" />
+
+        <CheckBox
+            android:id="@+id/sys_loge_ck"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="#231815" />
+    </LinearLayout>
+    
+
+     <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/btn_bg_color"
+        android:scaleType="fitXY" />
+     
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp"
+        android:gravity="center_horizontal|start"
+        android:orientation="vertical"
+        android:paddingBottom="30dp" >
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="35dp"
+            android:background="@drawable/button_shape_style_setting_1"
+            android:text="@string/check_firmware_version"
+            android:textColor="@color/aliceblue"
+            android:textSize="@dimen/system_setting_button_sieze" />
+    </LinearLayout>
+
+</LinearLayout>

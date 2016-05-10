@@ -1,0 +1,35 @@
+{
+  "project_info": {
+    "project_number": "551961666107",
+    "project_id": "mydoorbell-c403e"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:551961666107:android:34133e2b0063afb1",
+        "android_client_info": {
+          "package_name": "com.gocontrol.doorbell"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDZotUjDHWKkY30OsiAVyre0Z5hwp0gX64"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
